@@ -24,7 +24,9 @@ public class DatabaseDemoApplication implements CommandLineRunner {
 		// TODO Auto-generated method stub
 		logger.info("All users -> {} ", dao.findAll() );
 		logger.info("User id 10001 -> {} ", dao.findById( 10001) );
-		logger.info("User id 10001 -> {} ", dao.deleteById( 10002) );
+		logger.info("No. of rows deleted -> {} ", dao.deleteById( 10002) );
+		logger.info("User id 10001 -> {} ", dao.findById( 10001) );
+		
 	}
 
 }
